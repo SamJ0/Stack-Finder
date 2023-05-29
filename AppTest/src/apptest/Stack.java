@@ -36,7 +36,6 @@ public class Stack {
         } else {
             top++;
             array[top] = pushedElement;
-            System.out.println("Element " + pushedElement + " pushed to the stack.");
 
         }
     }
@@ -48,7 +47,7 @@ public class Stack {
         } else {
             x = array[top];
             top--;
-            System.out.println("----Stack ppopped!!!----");
+           
         }
         return x;
     }
@@ -64,17 +63,7 @@ public class Stack {
         }
     }
 
-    public void OriginalOrder() {
-        if (top == -1) {
-            System.out.println("Stack is empty.");
-        } else {
-            System.out.println("Stack elements in original order:");
-            for (int i = top; i >= 0; i--) {
-                System.out.print(array[i] + " ");
-            }
-            System.out.println();
-        }
-    }
+    
 
     public int size() {
         return top + 1;
